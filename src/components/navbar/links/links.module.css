@@ -1,0 +1,51 @@
+.links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 100px;
+}
+
+
+
+.logout{
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mobileLink{
+   display: none;
+}
+
+.Menubtn{
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .links{
+        display: none;
+    }
+
+    .Menubtn{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    .mobileLink{
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 50%;
+        height: calc(100vh - 100px);
+        background-color: var(--bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
